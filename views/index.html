@@ -1,0 +1,61 @@
+<!-- This is a static file -->
+<!-- served from your routes in server.js -->
+
+<!-- You might want to try something fancier: -->
+<!-- html/nunjucks docs: https://mozilla.github.io/nunjucks/ -->
+<!-- pug: https://pugjs.org/ -->
+<!-- haml: http://haml.info/ -->
+<!-- hbs(handlebars): http://handlebarsjs.com/ -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Craft Beer Name Generator</title>
+    <meta name="description" content="A name generator for all those craft beers you're brewing">
+    <link id="favicon" rel="icon" href="https://cdn.glitch.com/91c4ef13-267d-42e8-89e5-eb63da17a68e%2Ffavicon%20(3).ico?1520367793806" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <header>
+      <h1>
+        Craft Beer Name Generator
+      </h1>
+    </header>
+
+    <main>
+      <p class="bold">How bout a bottle of</p>
+      <p id="beer-name">Loading..</p>
+      by
+      <p id="brewery-name">Loading...</p>
+      <div class = "blue-area">
+        <button id="regenerate-buttom">Get Another Name!</button>
+      </div>
+      <br/>
+      Want to use this? Public API endpoint available at 
+      <br/>
+      <code> <a href="https://craft-beer-name-generatoror.glitch.me/newname"  target="_blank">https://craft-beer-name-generatoror.glitch.me/newname</a></code>
+      <br/>      <br/>
+      Tweet Suggestions to <a href="http://twitter.com/home?status=@madmaxlax beer name suggestion: " target="_blank">@MadMaxLax</a>
+      <br/>
+      Inspired by <a href="http://www.brooklynbarmenus.com/" target="_blank">http://www.brooklynbarmenus.com/</a> and <a href="https://www.dotomator.com/web20.html" target="_blank">https://www.dotomator.com/web20.html</a>
+    </main>
+
+    <footer>
+      Brought to you by <a href="http://madmaxlax.com" target="_blank">Max Struever</a>
+      <br/>
+      <a href="https://glitch.com">
+        Remix this in Glitch
+      </a>
+    </footer>
+
+    <!-- Your web-app is https, so your scripts need to be too -->
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"
+            integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="
+            crossorigin="anonymous"></script>
+    <script src="/client.js"></script>
+
+  </body>
+</html>
